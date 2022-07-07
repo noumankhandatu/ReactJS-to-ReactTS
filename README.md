@@ -1,3 +1,5 @@
+NUTSHELL run command npm i after that npm start ... good luck boys 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

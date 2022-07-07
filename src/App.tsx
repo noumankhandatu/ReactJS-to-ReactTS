@@ -20,6 +20,12 @@ function App() {
       age: 23,
     },
   ];
+  const ReturnSome = () => {
+    return 0;
+  };
+  const NoReturn = () => {
+    console.log("helo");
+  };
   return (
     <div className="App">
       <Greet
@@ -29,6 +35,8 @@ function App() {
         arrayString={arrayString}
         objectProps={object}
         objectArray={objectArray}
+        ReturnSome={ReturnSome}
+        NoReturn={NoReturn}
       />
     </div>
   );

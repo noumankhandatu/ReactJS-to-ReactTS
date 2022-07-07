@@ -1,10 +1,6 @@
 import React from "react";
-type ObjectHelper = {
-  name?: string;
-  age: number;
-  khan?: string;
-};
-interface GreetProps extends ObjectHelper {
+
+interface GreetProps {
   age: number;
   male?: boolean;
   array: number[];
@@ -18,6 +14,8 @@ interface GreetProps extends ObjectHelper {
     age: number;
     khan?: string;
   }[];
+  ReturnSome: () => void;
+  NoReturn: Function;
 }
 const Greet = ({
   age,
@@ -25,12 +23,17 @@ const Greet = ({
   array,
   arrayString,
   objectProps,
+  ReturnSome,
+  NoReturn,
   objectArray,
 }: GreetProps) => {
+  const z = ReturnSome();
+  const x = NoReturn();
+  console.log(z, x);
   return (
     <div>
       <h1>
-        Greetings nouman and im + {age} + {male && "male"}
+        Greetings xin and im + {age} + {male && "male"}
       </h1>
       <h1>
         {array.map((nums: number) => {
