@@ -28,6 +28,7 @@ function App() {
   };
   return (
     <div className="App">
+      <h1>Hello welcome to Typescript</h1>
       <Greet
         age={10}
         male={true}
